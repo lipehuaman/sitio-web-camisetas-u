@@ -290,3 +290,194 @@ h2 {
         font-size: 1.4rem;
     }
 }
+
+/* VARIABLES CSS (CUSTOM PROPERTIES) */
+
+:root {
+    --color-primary: #6c0000;
+    --color-secondary: #FEFCF3;
+    --color-accent: #F1E9C7;
+    --color-dark: #550000;
+    --transition-speed: 0.3s;
+    --shadow-hover: 0 15px 30px rgba(108, 0, 0, 0.3);
+}
+
+/* ANIMACIONES CON @KEYFRAMES */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* APLICAR ANIMACIONES */
+
+/* Animación de entrada para cards */
+.camiseta-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.camiseta-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.camiseta-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.camiseta-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* Logo ccon otra anim*/
+.logo {
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.logo:hover {
+    transform: scale(1.2) rotate(5deg);
+    filter: drop-shadow(0 5px 15px rgba(108, 0, 0, 0.4));
+}
+
+/* Animación para titulos */
+h2 {
+    animation: slideInLeft 0.8s ease-out;
+}
+
+/* Botones con efecto al hacer hover */
+.btn-primary:hover {
+    animation: pulse 0.6s infinite;
+}
+
+/* Navbar links con efecto */
+.nav-list a:hover {
+    animation: bounce 0.6s;
+}
+
+/*  GRADIENTES  */
+
+header {
+    background: linear-gradient(135deg, #FEFCF3 0%, #F1E9C7 100%);
+}
+
+#footer-u {
+    background: linear-gradient(135deg, #6c0000 0%, #550000 100%);
+}
+
+
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all var(--transition-speed) ease;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-5px);
+}
+
+.dropdown-menu {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* EFECTOS DE TEXTO */
+
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lead {
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+}
+
+
+
+.camiseta-card {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.camiseta-card:hover {
+    transform: translateY(-10px) rotateY(5deg);
+}
+
+/*  FILTROS CSS */
+
+.camiseta {
+    filter: brightness(100%);
+    transition: filter var(--transition-speed) ease;
+}
+
+.camiseta:hover {
+    filter: brightness(110%) contrast(105%);
+}
+
+/* EFECTOS PARA FORM */
+
+.form-control {
+    transition: all var(--transition-speed) ease;
+}
+
+.form-control:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(108, 0, 0, 0.2);
+}
+
+/* ANIMACIONES RESPONSIVE */
+
+
+@media (max-width: 768px) {
+    .camiseta-card {
+        animation: none;
+    }
+    
+    .btn-primary:hover {
+        animation: none;
+    }
+}
+
+/* (accesibilidad) */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
