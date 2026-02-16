@@ -48,7 +48,7 @@ li {
     transform: scale(1.1);
 }
 
-/* NAVEGACIÓN (FLEXBOX) */
+/* NAVEGACIÓN */
 
 .navbar {
     background-color: #6c0000;
@@ -393,9 +393,6 @@ h2 {
 
 /*  GRADIENTES  */
 
-header {
-    background: linear-gradient(135deg, #FEFCF3 0%, #F1E9C7 100%);
-}
 
 #footer-u {
     background: linear-gradient(135deg, #6c0000 0%, #550000 100%);
