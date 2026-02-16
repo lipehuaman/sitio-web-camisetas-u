@@ -111,18 +111,89 @@ li {
     color: #FEFCF3;
 }
 
+/* GALERÍA DE CAMISETAS */
+
 .camiseta {
-    width: 200px;
+    width: 100%;
     height: auto;
-    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.camiseta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(108, 0, 0, 0.3);
+}
+
+.camiseta-card {
+    border: 2px solid #6c0000;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.camiseta-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(108, 0, 0, 0.3);
+}
+
+.camiseta-card .card-body {
+    background-color: #FEFCF3;
+}
+
+.camiseta-card .card-title {
+    color: #6c0000;
+    font-weight: bold;
+}
+
+/* FORMULARIOS */
+
+.form-control {
+    border: 2px solid #6c0000;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: #6c0000;
+    box-shadow: 0 0 0 0.2rem rgba(108, 0, 0, 0.25);
+}
+
+/* CARDS */
+
+.card {
     border: 2px solid #6c0000;
     border-radius: 10px;
 }
 
+.card-title {
+    color: #6c0000;
+    font-weight: bold;
+}
+
+/* DROPDOWNS */
+
 .dropdown-u {
     background-color: #FEFCF3;
-    border: 1px solid #F1E9C7;
-    color: #A7A7A7;
+    border: 2px solid #6c0000;
+    color: #6c0000;
+    font-weight: 600;
+}
+
+.dropdown-u:hover,
+.dropdown-u:focus {
+    background-color: #F1E9C7;
+    border-color: #6c0000;
+    color: #6c0000;
+}
+
+.dropdown-menu {
+    border: 2px solid #6c0000;
+}
+
+.dropdown-item:hover {
+    background-color: #6c0000;
+    color: #FEFCF3;
 }
 
 h2 {
