@@ -393,10 +393,6 @@ h2 {
 
 /*  GRADIENTES  */
 
-header {
-    background: linear-gradient(135deg, #FEFCF3 0%, #F1E9C7 100%);
-}
-
 #footer-u {
     background: linear-gradient(135deg, #6c0000 0%, #550000 100%);
 }
@@ -460,6 +456,29 @@ h1 {
     transform: scale(1.02);
     box-shadow: 0 0 15px rgba(108, 0, 0, 0.2);
 }
+
+/* Hero Banner */
+.hero-banner {
+    width: 100%;
+    overflow: hidden;
+    max-height: 350px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Responsive para hero */
+@media (max-width: 768px) {
+    .hero-banner {
+        max-height: 250px;
+    }
+}
+
+
 
 /* ANIMACIONES RESPONSIVE */
 
