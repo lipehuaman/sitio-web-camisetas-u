@@ -52,3 +52,19 @@
     border-radius: $border-radius-small;
     @include transition(all);
 }
+
+%boton-base {
+    font-weight: 600;
+    padding: $spacing-small $spacing-medium;
+    border-radius: $border-radius-small;
+    @include transition(all);
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+%texto-destacado {
+    font-weight: bold;
+    color: $color-primary;
+    letter-spacing: 0.5px;
+}

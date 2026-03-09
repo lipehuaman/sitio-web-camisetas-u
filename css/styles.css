@@ -1,3 +1,19 @@
+.btn-outline-primary, .btn-primary {
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+#explicacion, h2, h1 {
+  font-weight: bold;
+  color: #6c0000;
+  letter-spacing: 0.5px;
+}
+
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -20,15 +36,11 @@ li {
 }
 
 h1 {
-  color: #6c0000;
   font-size: 1.8rem;
-  font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  color: #6c0000;
-  font-weight: bold;
   margin-bottom: 20px;
   font-size: 2rem;
   animation: slideInLeft 0.8s ease-out;
@@ -37,13 +49,9 @@ h2 {
 .lead {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #6c0000;
+  color: #9f0000;
   letter-spacing: 0.5px;
   line-height: 1.8;
-}
-
-#explicacion {
-  color: #6c0000;
 }
 
 .navbar {
@@ -98,26 +106,19 @@ h2 {
 }
 
 .btn-primary {
-  font-weight: 600;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: all 0.3s ease;
   background-color: #6c0000;
   border-color: #6c0000;
+  color: #FEFCF3;
 }
 .btn-primary:hover {
-  background-color: #550000;
-  border-color: #550000;
+  background-color: #390000;
   animation: pulse 0.6s infinite;
 }
 
 .btn-outline-primary {
-  font-weight: 600;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: all 0.3s ease;
   color: #6c0000;
-  border-color: #6c0000;
+  border: 2px solid #6c0000;
+  background-color: transparent;
 }
 .btn-outline-primary:hover {
   background-color: #6c0000;
@@ -355,6 +356,89 @@ header h1 {
     animation: none !important;
     transition: none !important;
   }
+}
+.m-small {
+  margin: 10px;
+}
+
+.p-small {
+  padding: 10px;
+}
+
+.mt-small {
+  margin-top: 10px;
+}
+
+.mb-small {
+  margin-bottom: 10px;
+}
+
+.m-medium {
+  margin: 20px;
+}
+
+.p-medium {
+  padding: 20px;
+}
+
+.mt-medium {
+  margin-top: 20px;
+}
+
+.mb-medium {
+  margin-bottom: 20px;
+}
+
+.m-large {
+  margin: 30px;
+}
+
+.p-large {
+  padding: 30px;
+}
+
+.mt-large {
+  margin-top: 30px;
+}
+
+.mb-large {
+  margin-bottom: 30px;
+}
+
+.ancho-1 {
+  width: 8.3333333333%;
+}
+
+.ancho-2 {
+  width: 16.6666666667%;
+}
+
+.ancho-3 {
+  width: 25%;
+}
+
+.ancho-4 {
+  width: 33.3333333333%;
+}
+
+.opacity-20 {
+  opacity: 0.2;
+}
+
+.opacity-40 {
+  opacity: 0.4;
+}
+
+.opacity-60 {
+  opacity: 0.6;
+}
+
+.opacity-80 {
+  opacity: 0.8;
+}
+
+.opacity-100 {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,13 +1,11 @@
 h1 {
-    color: $color-primary;
+    @extend %texto-destacado;
     font-size: $font-size-h1;
-    font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: $color-primary;
-    font-weight: bold;
+    @extend %texto-destacado;
     margin-bottom: $spacing-medium;
     font-size: $font-size-h2;
     animation: slideInLeft 0.8s ease-out;
@@ -16,11 +14,11 @@ h2 {
 .lead {
     font-size: $font-size-large;
     font-weight: 500;
-    color: $color-primary;
+    color: lighten($color-primary, 10%); // Operador de color
     letter-spacing: 0.5px;
     line-height: 1.8;
 }
 
 #explicacion {
-    color: $color-primary;
+    @extend %texto-destacado;
 }

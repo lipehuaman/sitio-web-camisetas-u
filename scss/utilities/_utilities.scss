@@ -1,0 +1,37 @@
+$espaciados: (
+    'small': $spacing-small,
+    'medium': $spacing-medium,
+    'large': $spacing-large
+);
+
+@each $nombre, $valor in $espaciados {
+    .m-#{$nombre} {
+        margin: $valor;
+    }
+    
+    .p-#{$nombre} {
+        padding: $valor;
+    }
+    
+    .mt-#{$nombre} {
+        margin-top: $valor;
+    }
+    
+    .mb-#{$nombre} {
+        margin-bottom: $valor;
+    }
+}
+
+$columnas: 12;
+
+@for $i from 1 through 4 {
+    .ancho-#{$i} {
+        width: percentage($i / $columnas); 
+    }
+}
+
+@for $i from 1 through 5 {
+    .opacity-#{$i * 20} {
+        opacity: $i * 0.2; 
+    }
+}

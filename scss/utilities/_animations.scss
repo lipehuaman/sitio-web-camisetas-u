@@ -42,7 +42,7 @@
     }
 }
 
-// Accesibilidad - reducir animaciones
+// Accesibilidad
 @media (prefers-reduced-motion: reduce) {
     * {
         animation: none !important;
