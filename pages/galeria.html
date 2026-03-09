@@ -52,10 +52,9 @@
                     DÉCADA
                 </button>
                 <div class="dropdown-menu w-100" aria-labelledby="dropdownDecada">
-                    <a class="dropdown-item" href="#">1920s</a>
-                    <a class="dropdown-item" href="#">1960s</a>
-                    <a class="dropdown-item" href="#">2000s</a>
-                    <a class="dropdown-item" href="#">Todas</a>
+                    <a class="dropdown-item filtro-decada" href="#" data-decada="todas">Todas</a>
+                    <a class="dropdown-item filtro-decada" href="#" data-decada="1980s">1980s</a>
+                    <a class="dropdown-item filtro-decada" href="#" data-decada="1990s">1990s</a>
                 </div>
             </div>
         </div>
@@ -66,10 +65,11 @@
                     TIPO
                 </button>
                 <div class="dropdown-menu w-100" aria-labelledby="dropdownTipo">
-                    <a class="dropdown-item" href="#">Local</a>
-                    <a class="dropdown-item" href="#">Visitante</a>
-                    <a class="dropdown-item" href="#">Alternativa</a>
-                    <a class="dropdown-item" href="#">Todas</a>
+                    <a class="dropdown-item filtro-tipo" href="#" data-tipo="todas">Todas</a>
+                    <a class="dropdown-item filtro-tipo" href="#" data-tipo="local">Local</a>
+                    <a class="dropdown-item filtro-tipo" href="#" data-tipo="visitante">Visitante</a>
+                    <a class="dropdown-item filtro-tipo" href="#" data-tipo="portero">Portero</a>
+                    <a class="dropdown-item filtro-tipo" href="#" data-tipo="especial">Especial</a>
                 </div>
             </div>
         </div>
@@ -80,44 +80,223 @@
                     MARCA
                 </button>
                 <div class="dropdown-menu w-100" aria-labelledby="dropdownMarca">
-                    <a class="dropdown-item" href="#">Adidas</a>
-                    <a class="dropdown-item" href="#">Nike</a>
-                    <a class="dropdown-item" href="#">Umbro</a>
-                    <a class="dropdown-item" href="#">Marathon</a>
-                    <a class="dropdown-item" href="#">Todas</a>
+                    <a class="dropdown-item filtro-marca" href="#" data-marca="todas">Todas</a>
+                    <a class="dropdown-item filtro-marca" href="#" data-marca="Power">Power</a>
+                    <a class="dropdown-item filtro-marca" href="#" data-marca="Puma">Puma</a>
+                    <a class="dropdown-item filtro-marca" href="#" data-marca="Calvo">Calvo</a>
+                    <a class="dropdown-item filtro-marca" href="#" data-marca="Umbro">Umbro</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Galería de camisetas con Grid de Bootstrap -->
-    <section class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+   <!-- Galería de camisetas con Grid de Bootstrap -->
+    <section class="row" id="galeria-camisetas">
+        <!-- Camiseta 1988 Home -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 camiseta-item" data-decada="1980s" data-tipo="local" data-marca="Power">
             <div class="card camiseta-card">
-                <img class="card-img-top camiseta" src="../img/cam_1924.jpeg" alt="Camiseta de 1924">
+                <img class="card-img-top camiseta" src="../img/1988_home.jpg" alt="Camiseta 1988 Local">
                 <div class="card-body">
-                    <h5 class="card-title">Camiseta 1924</h5>
-                    <p class="card-text">Primera camiseta oficial del club.</p>
+                    <h5 class="card-title">Camiseta 1988 Local</h5>
+                    <p class="card-text">Power - Rayas crema verticales</p>
                 </div>
             </div>
         </div>
-        
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+
+        <!-- Camiseta 1989 Home -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 camiseta-item" data-decada="1980s" data-tipo="local" data-marca="Puma">
             <div class="card camiseta-card">
-                <img class="card-img-top camiseta" src="../img/cam_1966.jpeg" alt="Camiseta de 1966">
+                <img class="card-img-top camiseta" src="../img/1989_home.jpg" alt="Camiseta 1989 Local">
                 <div class="card-body">
-                    <h5 class="card-title">Camiseta 1966</h5>
-                    <p class="card-text">Era dorada del fútbol peruano.</p>
+                    <h5 class="card-title">Camiseta 1989 Local</h5>
+                    <p class="card-text">Puma - Diseño clásico crema</p>
                 </div>
             </div>
         </div>
-        
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+
+        <!-- Camiseta 1989 Away -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 camiseta-item" data-decada="1980s" data-tipo="visitante" data-marca="Puma">
             <div class="card camiseta-card">
-                <img class="card-img-top camiseta" src="../img/cam_2009.jpeg" alt="Camiseta de 2009">
+                <img class="card-img-top camiseta" src="../img/1989_away.jpg" alt="Camiseta 1989 Visitante">
                 <div class="card-body">
-                    <h5 class="card-title">Camiseta 2009</h5>
-                    <p class="card-text">Centenario del club.</p>
+                    <h5 class="card-title">Camiseta 1989 Visitante</h5>
+                    <p class="card-text">Puma - Roja de visitante</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camiseta 1989 Arquero -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 camiseta-item" data-decada="1980s" data-tipo="portero" data-marca="Puma">
+            <div class="card camiseta-card">
+                <img class="card-img-top camiseta" src="../img/1989_arquero.jpg" alt="Camiseta 1989 Arquero">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta 1989 Arquero</h5>
+                    <p class="card-text">Puma - Portero rojo</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camiseta 1992 Home -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 camiseta-item" data-decada="1990s" data-tipo="local" data-marca="Calvo">
+            <div class="card camiseta-card">
+                <img class="card-img-top camiseta" src="../img/1992_home.jpg" alt="Camiseta 1992 Local">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta 1992 Local</h5>
+                    <p class="card-text">Calvo - Crema con rayas</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camiseta 1992 Away -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 camiseta-item" data-decada="1990s" data-tipo="visitante" data-marca="Calvo">
+            <div class="card camiseta-card">
+                <img class="card-img-top camiseta" src="../img/1992_away.jpg" alt="Camiseta 1992 Visitante">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta 1992 Visitante</h5>
+                    <p class="card-text">Calvo - Roja alternativa</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camiseta 1992 Portero -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 camiseta-item" data-decada="1990s" data-tipo="portero" data-marca="Calvo">
+            <div class="card camiseta-card">
+                <img class="card-img-top camiseta" src="../img/1992_portero.jpg" alt="Camiseta 1992 Portero">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta 1992 Portero</h5>
+                    <p class="card-text">Calvo - Portero Anchor</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camiseta 1993 Portero -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 camiseta-item" data-decada="1990s" data-tipo="portero" data-marca="Calvo">
+            <div class="card camiseta-card">
+                <img class="card-img-top camiseta" src="../img/1993_portero.jpg" alt="Camiseta 1993 Portero">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta 1993 Portero</h5>
+                    <p class="card-text">Calvo - Diseño rayas coloridas</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camiseta 1994 Home -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 camiseta-item" data-decada="1990s" data-tipo="local" data-marca="Calvo">
+            <div class="card camiseta-card">
+                <img class="card-img-top camiseta" src="../img/1994_home.jpg" alt="Camiseta 1994 Local">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta 1994 Local</h5>
+                    <p class="card-text">Calvo - Nicolini sponsor</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camiseta 1994 Away -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 camiseta-item" data-decada="1990s" data-tipo="visitante" data-marca="Umbro">
+            <div class="card camiseta-card">
+                <img class="card-img-top camiseta" src="../img/1994_away.jpg" alt="Camiseta 1994 Visitante">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta 1994 Visitante</h5>
+                    <p class="card-text">Umbro - Cusqueña roja</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camiseta 1995 Away -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 camiseta-item" data-decada="1990s" data-tipo="visitante" data-marca="Umbro">
+            <div class="card camiseta-card">
+                <img class="card-img-top camiseta" src="../img/1995_away.jpg" alt="Camiseta 1995 Visitante">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta 1995 Visitante</h5>
+                    <p class="card-text">Umbro - Cusqueña crema</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camiseta 1996 Home -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 camiseta-item" data-decada="1990s" data-tipo="local" data-marca="Umbro">
+            <div class="card camiseta-card">
+                <img class="card-img-top camiseta" src="../img/1996_home.jpg" alt="Camiseta 1996 Local">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta 1996 Local</h5>
+                    <p class="card-text">Umbro - Cusqueña especial</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camiseta 1996 Away -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 camiseta-item" data-decada="1990s" data-tipo="visitante" data-marca="Umbro">
+            <div class="card camiseta-card">
+                <img class="card-img-top camiseta" src="../img/1996_away.jpg" alt="Camiseta 1996 Visitante">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta 1996 Visitante</h5>
+                    <p class="card-text">Umbro - Portero geométrico</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camiseta 1996 Portero -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 camiseta-item" data-decada="1990s" data-tipo="portero" data-marca="Umbro">
+            <div class="card camiseta-card">
+                <img class="card-img-top camiseta" src="../img/1996_portero.jpg" alt="Camiseta 1996 Portero">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta 1996 Portero</h5>
+                    <p class="card-text">Umbro - 6 Estrellas</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camiseta 1997 Home -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 camiseta-item" data-decada="1990s" data-tipo="local" data-marca="Umbro">
+            <div class="card camiseta-card">
+                <img class="card-img-top camiseta" src="../img/1997_home.jpg" alt="Camiseta 1997 Local">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta 1997 Local</h5>
+                    <p class="card-text">Umbro - Lolo Fernández</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camiseta 1997 Away -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 camiseta-item" data-decada="1990s" data-tipo="visitante" data-marca="Umbro">
+            <div class="card camiseta-card">
+                <img class="card-img-top camiseta" src="../img/1997_away.jpg" alt="Camiseta 1997 Visitante">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta 1997 Visitante</h5>
+                    <p class="card-text">Umbro - Cusqueña crema</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camiseta 1997 Especial -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 camiseta-item" data-decada="1990s" data-tipo="especial" data-marca="Umbro">
+            <div class="card camiseta-card">
+                <img class="card-img-top camiseta" src="../img/1997_especial.jpg" alt="Camiseta 1997 Especial">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta 1997 Especial</h5>
+                    <p class="card-text">Umbro - Edición aniversario</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camiseta 1998 Home -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 camiseta-item" data-decada="1990s" data-tipo="local" data-marca="Umbro">
+            <div class="card camiseta-card">
+                <img class="card-img-top camiseta" src="../img/1998_home.jpg" alt="Camiseta 1998 Local">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta 1998 Local</h5>
+                    <p class="card-text">Umbro - Universitario 1924</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camiseta 1998 Away -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 camiseta-item" data-decada="1990s" data-tipo="visitante" data-marca="Umbro">
+            <div class="card camiseta-card">
+                <img class="card-img-top camiseta" src="../img/1998_away.jpg" alt="Camiseta 1998 Visitante">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta 1998 Visitante</h5>
+                    <p class="card-text">Umbro - Roja alternativa</p>
                 </div>
             </div>
         </div>
@@ -125,6 +304,7 @@
 </main>
      
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="../js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
  <footer id="footer-u" class="mt-5 py-3">
