@@ -1,0 +1,17 @@
+// Hero Banner
+.hero-banner {
+    width: 100%;
+    overflow: hidden;
+    max-height: 350px;
+
+    @include responsive(tablet) {
+        max-height: 250px;
+    }
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}

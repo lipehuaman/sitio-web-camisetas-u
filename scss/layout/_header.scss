@@ -1,0 +1,43 @@
+header {
+    background-color: $color-secondary;
+    color: $color-primary;
+    border-bottom: $border-width-thick solid $color-primary;
+
+    h1 {
+        color: $color-primary;
+        font-size: $font-size-h1;
+        font-weight: bold;
+    }
+
+    @include responsive(tablet) {
+        h1 {
+            font-size: 1.4rem;
+            text-align: center;
+        }
+    }
+
+    @include responsive(mobile) {
+        h1 {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    transition: all $transition-speed-slow cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    &:hover {
+        transform: scale(1.2) rotate(5deg);
+        filter: drop-shadow(0 5px 15px rgba(108, 0, 0, 0.4));
+    }
+
+    @include responsive(tablet) {
+        width: 60px;
+    }
+
+    @include responsive(mobile) {
+        width: 50px;
+    }
+}

@@ -1,0 +1,10 @@
+#footer-u {
+    background: linear-gradient(135deg, $color-primary 0%, $color-dark 100%);
+    color: $color-secondary;
+    border-top: $border-width-thick solid $color-dark;
+
+    p {
+        color: $color-secondary;
+        margin: 0;
+    }
+}

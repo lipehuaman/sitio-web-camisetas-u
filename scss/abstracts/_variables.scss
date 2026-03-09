@@ -1,0 +1,38 @@
+// Colores
+$color-primary: #6c0000;
+$color-secondary: #FEFCF3;
+$color-accent: #F1E9C7;
+$color-dark: #550000;
+
+// Tipografía
+$font-main: Arial, sans-serif;
+$font-size-base: 16px;
+$font-size-large: 1.2rem;
+$font-size-h1: 1.8rem;
+$font-size-h2: 2rem;
+
+// Espaciado
+$spacing-small: 10px;
+$spacing-medium: 20px;
+$spacing-large: 30px;
+
+// Transiciones
+$transition-speed: 0.3s;
+$transition-speed-slow: 0.5s;
+$transition-easing: ease;
+
+// Sombras
+$shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-medium: 0 10px 25px rgba(108, 0, 0, 0.3);
+$shadow-heavy: 0 15px 30px rgba(108, 0, 0, 0.3);
+
+// Bordes
+$border-radius-small: 5px;
+$border-radius-medium: 10px;
+$border-width: 2px;
+$border-width-thick: 3px;
+
+// Breakpoints
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1200px;

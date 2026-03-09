@@ -1,0 +1,26 @@
+h1 {
+    color: $color-primary;
+    font-size: $font-size-h1;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: $color-primary;
+    font-weight: bold;
+    margin-bottom: $spacing-medium;
+    font-size: $font-size-h2;
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.lead {
+    font-size: $font-size-large;
+    font-weight: 500;
+    color: $color-primary;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+}
+
+#explicacion {
+    color: $color-primary;
+}

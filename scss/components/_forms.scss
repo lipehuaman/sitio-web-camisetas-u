@@ -1,0 +1,39 @@
+.form-control {
+    border: $border-width solid $color-primary;
+    border-radius: $border-radius-small;
+    @include transition(all);
+
+    &:focus {
+        border-color: $color-primary;
+        box-shadow: 0 0 0 0.2rem rgba(108, 0, 0, 0.25);
+        transform: scale(1.02);
+        box-shadow: 0 0 15px rgba(108, 0, 0, 0.2);
+    }
+}
+
+// Dropdowns
+.dropdown-u {
+    background-color: $color-secondary;
+    border: $border-width solid $color-primary;
+    color: $color-primary;
+    font-weight: 600;
+
+    &:hover,
+    &:focus {
+        background-color: $color-accent;
+        border-color: $color-primary;
+        color: $color-primary;
+    }
+}
+
+.dropdown-menu {
+    border: $border-width solid $color-primary;
+    box-shadow: $shadow-medium;
+}
+
+.dropdown-item {
+    &:hover {
+        background-color: $color-primary;
+        color: $color-secondary;
+    }
+}

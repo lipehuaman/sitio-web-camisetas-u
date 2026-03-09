@@ -1,0 +1,21 @@
+// Reset básico
+body {
+    font-family: $font-main;
+    font-size: $font-size-base;
+    background-color: $color-secondary;
+    margin: $spacing-medium;
+    padding: $spacing-medium;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: $color-secondary;
+}
+
+li {
+    list-style-type: none;
+    padding: $spacing-small;
+    line-height: 110%;
+}

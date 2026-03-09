@@ -1,0 +1,51 @@
+.navbar {
+    background-color: $color-primary;
+    padding: 15px 0;
+    border-radius: 0;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @include flex-center;
+    gap: $spacing-large;
+    flex-wrap: wrap;
+
+    li {
+        padding: 0;
+    }
+
+    a {
+        color: $color-secondary;
+        font-weight: 600;
+        font-size: 1.1rem;
+        padding: $spacing-small $spacing-medium;
+        border-radius: $border-radius-small;
+        @include transition(background-color);
+        white-space: nowrap;
+
+        &:hover {
+            background-color: rgba(53, 10, 10, 0.2);
+            animation: bounce 0.6s;
+        }
+    }
+
+    @include responsive(tablet) {
+        gap: 15px;
+
+        a {
+            font-size: 0.95rem;
+            padding: 8px 15px;
+        }
+    }
+
+    @include responsive(mobile) {
+        gap: 10px;
+
+        a {
+            font-size: 0.9rem;
+            padding: 6px 12px;
+        }
+    }
+}

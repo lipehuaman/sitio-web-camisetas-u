@@ -1,0 +1,25 @@
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// Base
+@import 'base/reset';
+@import 'base/typography';
+
+// Components
+@import 'components/navbar';
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/forms';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// Pages
+@import 'pages/home';
+@import 'pages/gallery';
+@import 'pages/contacto';
+
+// Animaciones (al final)
+@import 'utilities/animations';

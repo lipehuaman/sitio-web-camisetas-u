@@ -1,0 +1,502 @@
+/* linea de comentario */
+
+
+
+/* formas de aplicar estilos */
+/* mediante nombre de etiqueta */
+
+header {
+    background-color: #FEFCF3;
+    color: #6c0000;
+    border-bottom: 3px solid #6c0000;
+}
+
+header h1 {
+    color: #6c0000;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+ body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #FEFCF3;
+    margin: 20px;
+    padding: 20px;
+}
+
+a {
+  text-decoration: none;
+    color: #FEFCF3;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    line-height: 110%;
+}
+
+/* mediante clase */
+
+.logo {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* NAVEGACIÓN */
+
+.navbar {
+    background-color: #6c0000;
+    padding: 15px 0;
+    border-radius: 0;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.nav-list li {
+    padding: 0;
+}
+
+.nav-list a {
+    color: #FEFCF3;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav-list a:hover {
+    background-color: rgba(53, 10, 10, 0.2);
+}
+
+
+/*  BOTONEEEEEEEEEEES */
+
+.btn-primary {
+    background-color: #6c0000;
+    border-color: #6c0000;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #550000;
+    border-color: #550000;
+}
+
+.btn-outline-primary {
+    color: #6c0000;
+    border-color: #6c0000;
+    font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+    background-color: #6c0000;
+    border-color: #6c0000;
+    color: #FEFCF3;
+}
+
+/* GALERÍA DE CAMISETAS */
+
+.camiseta {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.camiseta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(108, 0, 0, 0.3);
+}
+
+.camiseta-card {
+    border: 2px solid #6c0000;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.camiseta-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(108, 0, 0, 0.3);
+}
+
+.camiseta-card .card-body {
+    background-color: #FEFCF3;
+}
+
+.camiseta-card .card-title {
+    color: #6c0000;
+    font-weight: bold;
+}
+
+/* FORMULARIOS */
+
+.form-control {
+    border: 2px solid #6c0000;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: #6c0000;
+    box-shadow: 0 0 0 0.2rem rgba(108, 0, 0, 0.25);
+}
+
+/* CARDS */
+
+.card {
+    border: 2px solid #6c0000;
+    border-radius: 10px;
+}
+
+.card-title {
+    color: #6c0000;
+    font-weight: bold;
+}
+
+/* DROPDOWNS */
+
+.dropdown-u {
+    background-color: #FEFCF3;
+    border: 2px solid #6c0000;
+    color: #6c0000;
+    font-weight: 600;
+}
+
+.dropdown-u:hover,
+.dropdown-u:focus {
+    background-color: #F1E9C7;
+    border-color: #6c0000;
+    color: #6c0000;
+}
+
+.dropdown-menu {
+    border: 2px solid #6c0000;
+}
+
+.dropdown-item:hover {
+    background-color: #6c0000;
+    color: #FEFCF3;
+}
+
+h2 {
+    color: #6c0000;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.lead {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #6c0000;
+}
+
+#explicacion {
+    color: #6c0000;
+}
+
+  #myInput {
+    padding: 20px;
+    margin-top: -6px;
+    border: 0;
+    border-radius: 0;
+    background: #f1f1f1;
+  }
+
+#footer-u {
+    background-color: #6c0000;
+    color: #FEFCF3;
+    border-top: 3px solid #550000;
+}
+
+#footer-u p {
+    color: #FEFCF3;
+    margin: 0;
+}
+
+/* ruta de especificidad */
+
+
+/* RESPONSIF DISAIN */
+
+/* Tablets */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .nav-list {
+        gap: 15px;
+    }
+
+    .nav-list a {
+        font-size: 0.95rem;
+        padding: 8px 15px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .nav-list {
+        gap: 10px;
+    }
+
+    .nav-list a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* VARIABLES CSS (CUSTOM PROPERTIES) */
+
+:root {
+    --color-primary: #6c0000;
+    --color-secondary: #FEFCF3;
+    --color-accent: #F1E9C7;
+    --color-dark: #550000;
+    --transition-speed: 0.3s;
+    --shadow-hover: 0 15px 30px rgba(108, 0, 0, 0.3);
+}
+
+/* ANIMACIONES CON @KEYFRAMES */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* APLICAR ANIMACIONES */
+
+/* Animación de entrada para cards */
+.camiseta-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.camiseta-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.camiseta-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.camiseta-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* Logo ccon otra anim*/
+.logo {
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.logo:hover {
+    transform: scale(1.2) rotate(5deg);
+    filter: drop-shadow(0 5px 15px rgba(108, 0, 0, 0.4));
+}
+
+/* Animación para titulos */
+h2 {
+    animation: slideInLeft 0.8s ease-out;
+}
+
+/* Botones con efecto al hacer hover */
+.btn-primary:hover {
+    animation: pulse 0.6s infinite;
+}
+
+/* Navbar links con efecto */
+.nav-list a:hover {
+    animation: bounce 0.6s;
+}
+
+/*  GRADIENTES  */
+
+#footer-u {
+    background: linear-gradient(135deg, #6c0000 0%, #550000 100%);
+}
+
+
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all var(--transition-speed) ease;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-5px);
+}
+
+.dropdown-menu {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* EFECTOS DE TEXTO */
+
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lead {
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+}
+
+
+
+.camiseta-card {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.camiseta-card:hover {
+    transform: translateY(-10px) rotateY(5deg);
+}
+
+/*  FILTROS CSS */
+
+.camiseta {
+    filter: brightness(100%);
+    transition: filter var(--transition-speed) ease;
+}
+
+.camiseta:hover {
+    filter: brightness(110%) contrast(105%);
+}
+
+/* EFECTOS PARA FORM */
+
+.form-control {
+    transition: all var(--transition-speed) ease;
+}
+
+.form-control:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(108, 0, 0, 0.2);
+}
+
+/* Hero Banner */
+.hero-banner {
+    width: 100%;
+    overflow: hidden;
+    max-height: 350px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Responsive para hero */
+@media (max-width: 768px) {
+    .hero-banner {
+        max-height: 250px;
+    }
+}
+
+
+
+/* ANIMACIONES RESPONSIVE */
+
+
+@media (max-width: 768px) {
+    .camiseta-card {
+        animation: none;
+    }
+    
+    .btn-primary:hover {
+        animation: none;
+    }
+}
+
+/* (accesibilidad) */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
