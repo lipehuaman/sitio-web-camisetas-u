@@ -14,7 +14,7 @@ h2 {
 .lead {
     font-size: $font-size-large;
     font-weight: 500;
-    color: lighten($color-primary, 10%); // Operador de color
+    color: lighten($color-primary, 10%); 
     letter-spacing: 0.5px;
     line-height: 1.8;
 }
